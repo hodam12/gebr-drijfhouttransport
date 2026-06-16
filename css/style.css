@@ -1,10 +1,10 @@
 :root {
-  --color-primary: #0b3d91;
-  --color-primary-dark: #07275c;
+  --color-primary: #2260cd;
+  --color-primary-dark: #173f8f;
   --color-on-primary: #ffffff;
   --color-secondary: #475569;
-  --color-accent: #1d6fd8;
-  --color-accent-dark: #14559f;
+  --color-accent: #2260cd;
+  --color-accent-dark: #173f8f;
   --color-background: #ffffff;
   --color-foreground: #0f172a;
   --color-muted: #f1f5fb;
@@ -314,7 +314,7 @@ img { max-width: 100%; display: block; }
   width: 52px;
   height: 52px;
   border-radius: 12px;
-  background: rgba(29, 111, 216, 0.12);
+  background: rgba(34, 96, 205, 0.12);
   color: var(--color-accent);
   display: flex;
   align-items: center;

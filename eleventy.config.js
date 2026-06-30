@@ -41,6 +41,15 @@ export default function (eleventyConfig) {
     return Image.generateHTML(metadata, htmlOpties);
   });
 
+  // Zet een bestandspad zoals "src/assets/uploads/icoon.svg" (zo slaat de CMS
+  // het op) om naar het webadres "/assets/uploads/icoon.svg". Gebruikt voor
+  // kleine afbeeldingen (zoals icoontjes) die niet via eleventy-img geschaald
+  // hoeven te worden.
+  eleventyConfig.addFilter("url", function (src) {
+    if (!src) return "";
+    return src.replace(/^src\//, "/");
+  });
+
   eleventyConfig.addAsyncShortcode("galerijFoto", async function (src, alt) {
     if (!src) return "";
     let metadata = await optimize(src, [560, 1280]);

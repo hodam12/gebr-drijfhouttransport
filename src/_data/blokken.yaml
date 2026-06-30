@@ -1,0 +1,64 @@
+lijst:
+  - type: "kaarten"
+    zichtbaar: true
+    in_menu: true
+    menutekst: "Diensten"
+    anker: "diensten"
+    stijl: "normaal"
+    label: "Diensten"
+    titel: "Waarmee kunnen wij u helpen?"
+    tekst: "Van eenmalig transport tot het huren van materieel – wij denken met u mee over de praktische oplossing."
+    items:
+      - icoon: "src/assets/icons/vrachtwagen.svg"
+        titel: "Transport"
+        tekst: "Transport voor particulieren en bedrijven met onze tautliner, semi-trailer en containertruck met haakarmsysteem. Ook geschikt voor kraanwerk met steenklemmen, palethaken en lasthaken."
+      - icoon: "src/assets/icons/aanhanger.svg"
+        titel: "Aanhangwagenverhuur"
+        tekst: "Onze aanhangwagen is voorzien van een dekzeil en geschikt voor een belasting tot 750 kg – ideaal voor een tussentijds klusje. Reserveer tijdig via een belletje of mailtje."
+      - icoon: "src/assets/icons/container.svg"
+        titel: "Containerverhuur"
+        tekst: "Wij beschikken over containerbakken in verschillende groottes. Wij brengen de container naar de gewenste locatie en zorgen ook voor het afvoeren van de inhoud."
+
+  - type: "galerij"
+    zichtbaar: true
+    in_menu: true
+    menutekst: "Wagenpark"
+    anker: "wagenpark"
+    stijl: "alt"
+    label: "Wagenpark"
+    titel: "Modern materieel, vakkundig ingezet"
+    tekst: "Een impressie van onze voertuigen en het werk dat we dagelijks verrichten in en rond Bedum."
+    fotos:
+      - afbeelding: "src/assets/img-full/gallery_52.jpg"
+        alt: "Vrachtwagen van Gebr. Drijfhout"
+      - afbeelding: "src/assets/img-full/fleet_zxandkipper.jpg"
+        alt: "Kipperwagen van het wagenpark"
+      - afbeelding: "src/assets/img-full/gallery_56.jpg"
+        alt: "Transportwagen aan het werk"
+      - afbeelding: "src/assets/img-full/fleet_280053_606537289448647_3993714222030207255_o.jpg"
+        alt: "Vrachtwagen met aanhanger"
+      - afbeelding: "src/assets/img-full/gallery_62.jpg"
+        alt: "Materieel van Gebr. Drijfhout"
+      - afbeelding: "src/assets/img-full/fleet_10459109_485986458170398_6099323526093723346_n.jpg"
+        alt: "Vrachtwagen in de regio Bedum"
+      - afbeelding: "src/assets/img-full/gallery_65.jpg"
+        alt: "Voertuig van het wagenpark"
+      - afbeelding: "src/assets/img-full/drijfhout3wa2.jpg"
+        alt: "Gebr. Drijfhout transport"
+
+  - type: "tekst-met-foto"
+    zichtbaar: true
+    in_menu: true
+    menutekst: "Over ons"
+    anker: "over-ons"
+    label: "Over ons"
+    titel: "Een vertrouwd familiebedrijf uit Bedum"
+    afbeelding: "src/assets/img-full/DSC02312.jpg"
+    afbeelding_alt: "Gebr. Drijfhout aan het werk"
+    teksten:
+      - "Gebr. Drijfhout is al meer dan vijftig jaar een vertrouwde naam in transport in en rond Bedum, Groningen. Wat begon als een klein familiebedrijf is uitgegroeid tot een betrouwbare partner voor particulieren en bedrijven die op zoek zijn naar transport, een aanhangwagen of een container."
+      - "We werken met eigen materieel, denken mee over de beste oplossing en staan bekend om onze persoonlijke aanpak: korte lijnen, duidelijke afspraken en werk dat gewoon goed gebeurt."
+    punten:
+      - "Ruime ervaring met transport voor particulier en bedrijf"
+      - "Eigen voertuigen, waaronder tautliner en containertruck met haakarm"
+      - "Persoonlijk contact en snelle planning"

@@ -8,9 +8,9 @@
       <span></span><span></span><span></span>
     </button>
     <nav class="main-nav" id="mainNav">
-      {% if diensten.zichtbaar %}<a href="#diensten">Diensten</a>{% endif %}
-      {% if wagenpark.zichtbaar %}<a href="#wagenpark">Wagenpark</a>{% endif %}
-      {% if overOns.zichtbaar %}<a href="#over-ons">Over ons</a>{% endif %}
+      {% for blok in blokken.lijst %}
+        {% if blok.zichtbaar and blok.in_menu %}<a href="#{{ blok.anker }}">{{ blok.menutekst }}</a>{% endif %}
+      {% endfor %}
       {% if contact.zichtbaar %}<a href="#contact">Contact</a>{% endif %}
       <a href="tel:{{ site.telefoon_link }}" class="nav-cta">{{ site.telefoon }}</a>
     </nav>

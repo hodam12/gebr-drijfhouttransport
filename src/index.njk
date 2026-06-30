@@ -3,7 +3,72 @@ layout: layout.njk
 ---
 {% include "partials/hero.njk" %}
 {% include "partials/strip.njk" %}
-{% include "partials/diensten.njk" %}
-{% include "partials/wagenpark.njk" %}
-{% include "partials/over-ons.njk" %}
+{% for blok in blokken.lijst %}
+{% if blok.zichtbaar %}
+
+{% if blok.type == "kaarten" %}
+  <section id="{{ blok.anker }}" class="section{% if blok.stijl == 'alt' %} section-alt{% endif %}">
+    <div class="container">
+      {% if blok.label %}<p class="section-label">{{ blok.label }}</p>{% endif %}
+      <h2>{{ blok.titel }}</h2>
+      {% if blok.tekst %}<p class="section-lead">{{ blok.tekst }}</p>{% endif %}
+      <div class="card-grid">
+        {% for item in blok.items %}
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              {% if item.icoon %}<img src="{{ item.icoon | url }}" alt="">{% endif %}
+            </div>
+            <h3>{{ item.titel }}</h3>
+            <p>{{ item.tekst }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+{% elif blok.type == "galerij" %}
+  <section id="{{ blok.anker }}" class="section{% if blok.stijl == 'alt' %} section-alt{% endif %}">
+    <div class="container">
+      {% if blok.label %}<p class="section-label">{{ blok.label }}</p>{% endif %}
+      <h2>{{ blok.titel }}</h2>
+      {% if blok.tekst %}<p class="section-lead">{{ blok.tekst }}</p>{% endif %}
+      <div class="gallery">
+        {% for foto in blok.fotos %}
+          {% galerijFoto foto.afbeelding, foto.alt %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+{% elif blok.type == "tekst-met-foto" %}
+  <section id="{{ blok.anker }}" class="section about">
+    <div class="container about-grid">
+      <div class="about-media">
+        {% afbeelding blok.afbeelding, blok.afbeelding_alt %}
+      </div>
+      <div class="about-text">
+        {% if blok.label %}<p class="section-label">{{ blok.label }}</p>{% endif %}
+        <h2>{{ blok.titel }}</h2>
+        {% for alinea in blok.teksten %}<p>{{ alinea }}</p>{% endfor %}
+        {% if blok.punten and blok.punten.length %}
+          <ul class="about-list">
+            {% for punt in blok.punten %}<li>{{ punt }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+{% elif blok.type == "tekst" %}
+  <section id="{{ blok.anker }}" class="section{% if blok.stijl == 'alt' %} section-alt{% endif %}">
+    <div class="container">
+      {% if blok.label %}<p class="section-label">{{ blok.label }}</p>{% endif %}
+      <h2>{{ blok.titel }}</h2>
+      {% for alinea in blok.teksten %}<p>{{ alinea }}</p>{% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+{% endif %}
+{% endfor %}
 {% include "partials/contact.njk" %}

@@ -1,0 +1,15 @@
+zichtbaar: true
+label: "Diensten"
+titel: "Waarmee kunnen wij u helpen?"
+tekst: "Van eenmalig transport tot het huren van materieel – wij denken met u mee over de praktische oplossing."
+
+lijst:
+  - icoon: "vrachtwagen"
+    titel: "Transport"
+    tekst: "Transport voor particulieren en bedrijven met onze tautliner, semi-trailer en containertruck met haakarmsysteem. Ook geschikt voor kraanwerk met steenklemmen, palethaken en lasthaken."
+  - icoon: "aanhanger"
+    titel: "Aanhangwagenverhuur"
+    tekst: "Onze aanhangwagen is voorzien van een dekzeil en geschikt voor een belasting tot 750 kg – ideaal voor een tussentijds klusje. Reserveer tijdig via een belletje of mailtje."
+  - icoon: "container"
+    titel: "Containerverhuur"
+    tekst: "Wij beschikken over containerbakken in verschillende groottes. Wij brengen de container naar de gewenste locatie en zorgen ook voor het afvoeren van de inhoud."

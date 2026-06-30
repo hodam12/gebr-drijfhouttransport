@@ -1,0 +1,36 @@
+{% if contact.zichtbaar %}
+  <section id="contact" class="section section-dark">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-label">{{ contact.label }}</p>
+        <h2>{{ contact.titel }}</h2>
+        <p class="section-lead">{{ contact.tekst }}</p>
+
+        <dl class="contact-list">
+          <div>
+            <dt>Adres</dt>
+            <dd>{{ contact.adres_straat }}<br>{{ contact.adres_postcode_plaats }}</dd>
+          </div>
+          <div>
+            <dt>Telefoon</dt>
+            <dd><a href="tel:{{ contact.telefoon_link }}">{{ contact.telefoon }}</a></dd>
+          </div>
+          {% if contact.fax %}
+            <div>
+              <dt>Fax</dt>
+              <dd>{{ contact.fax }}</dd>
+            </div>
+          {% endif %}
+        </dl>
+      </div>
+      <div class="contact-map">
+        <iframe
+          title="Locatie {{ site.bedrijfsnaam }}, {{ contact.maps_zoekterm }}"
+          src="https://www.google.com/maps?q={{ contact.maps_zoekterm | urlencode }}&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+{% endif %}

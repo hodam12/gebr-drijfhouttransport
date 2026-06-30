@@ -1,0 +1,12 @@
+zichtbaar: true
+label: "Over ons"
+titel: "Een vertrouwd familiebedrijf uit Bedum"
+afbeelding: "src/assets/img-full/DSC02312.jpg"
+afbeelding_alt: "Gebr. Drijfhout aan het werk"
+teksten:
+  - "Gebr. Drijfhout is al meer dan vijftig jaar een vertrouwde naam in transport in en rond Bedum, Groningen. Wat begon als een klein familiebedrijf is uitgegroeid tot een betrouwbare partner voor particulieren en bedrijven die op zoek zijn naar transport, een aanhangwagen of een container."
+  - "We werken met eigen materieel, denken mee over de beste oplossing en staan bekend om onze persoonlijke aanpak: korte lijnen, duidelijke afspraken en werk dat gewoon goed gebeurt."
+punten:
+  - "Ruime ervaring met transport voor particulier en bedrijf"
+  - "Eigen voertuigen, waaronder tautliner en containertruck met haakarm"
+  - "Persoonlijk contact en snelle planning"

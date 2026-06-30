@@ -1,0 +1,17 @@
+{% if site.hero.zichtbaar %}
+  <section class="hero">
+    <div class="hero-media">
+      {% afbeelding site.hero.afbeelding, site.hero.afbeelding_alt, { eager: true } %}
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">{{ site.hero.eyebrow }}</p>
+      <h1>{{ site.hero.titel }}</h1>
+      <p class="hero-lead">{{ site.hero.tekst }}</p>
+      <div class="hero-actions">
+        <a href="{{ site.hero.knop_primair_link }}" class="btn btn-primary">{{ site.hero.knop_primair_tekst }}</a>
+        <a href="{{ site.hero.knop_secundair_link }}" class="btn btn-ghost">{{ site.hero.knop_secundair_tekst }}</a>
+      </div>
+    </div>
+  </section>
+{% endif %}

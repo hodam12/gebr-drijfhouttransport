@@ -1,0 +1,139 @@
+backend:
+  name: github
+  repo: hodam12/gebr-drijfhouttransport
+  branch: main
+  base_url: https://decap-oauth.VUL-HIER-JE-WORKER-NAAM-IN.workers.dev
+  auth_endpoint: auth
+
+# Laat een redacteur eerst een wijziging opslaan als "concept" (Pull Request)
+# voordat die live gaat, zodat er nooit per ongeluk direct gepubliceerd wordt.
+publish_mode: editorial_workflow
+
+media_folder: "src/assets/uploads"
+public_folder: "src/assets/uploads"
+
+locale: "nl"
+
+collections:
+  - name: "site"
+    label: "Algemeen & Hero"
+    files:
+      - name: "site"
+        label: "Algemene instellingen"
+        file: "src/_data/site.yaml"
+        fields:
+          - { label: "Bedrijfsnaam", name: "bedrijfsnaam", widget: "string" }
+          - { label: "Initialen (logo)", name: "initialen", widget: "string" }
+          - { label: "Ondertitel (in menu)", name: "ondertitel", widget: "string" }
+          - { label: "Paginatitel (browsertab)", name: "titel_pagina", widget: "string" }
+          - { label: "Omschrijving (voor Google)", name: "beschrijving", widget: "text" }
+          - { label: "Telefoonnummer (zichtbaar)", name: "telefoon", widget: "string" }
+          - { label: "Telefoonnummer (voor bel-knop, zonder spaties/streepjes)", name: "telefoon_link", widget: "string" }
+          - label: "Hero (bovenste vak)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Zichtbaar", name: "zichtbaar", widget: "boolean", default: true }
+              - { label: "Kleine tekst boven titel", name: "eyebrow", widget: "string" }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+              - { label: "Tekst primaire knop", name: "knop_primair_tekst", widget: "string" }
+              - { label: "Link primaire knop", name: "knop_primair_link", widget: "string" }
+              - { label: "Tekst tweede knop", name: "knop_secundair_tekst", widget: "string" }
+              - { label: "Link tweede knop", name: "knop_secundair_link", widget: "string" }
+              - { label: "Achtergrondfoto", name: "afbeelding", widget: "image" }
+              - { label: "Omschrijving foto (voor toegankelijkheid)", name: "afbeelding_alt", widget: "string" }
+          - label: "Cijferbalk"
+            name: "strip"
+            widget: "object"
+            fields:
+              - { label: "Zichtbaar", name: "zichtbaar", widget: "boolean", default: true }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Cijfer / kop", name: "cijfer", widget: "string" }
+                  - { label: "Tekst", name: "tekst", widget: "string" }
+
+  - name: "diensten"
+    label: "Diensten"
+    files:
+      - name: "diensten"
+        label: "Diensten-sectie"
+        file: "src/_data/diensten.yaml"
+        fields:
+          - { label: "Zichtbaar", name: "zichtbaar", widget: "boolean", default: true }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Titel", name: "titel", widget: "string" }
+          - { label: "Tekst", name: "tekst", widget: "text" }
+          - label: "Diensten"
+            name: "lijst"
+            widget: "list"
+            fields:
+              - label: "Icoon"
+                name: "icoon"
+                widget: "select"
+                options:
+                  - { label: "Vrachtwagen", value: "vrachtwagen" }
+                  - { label: "Aanhangwagen", value: "aanhanger" }
+                  - { label: "Container", value: "container" }
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Tekst", name: "tekst", widget: "text" }
+
+  - name: "wagenpark"
+    label: "Wagenpark / Fotogalerij"
+    files:
+      - name: "wagenpark"
+        label: "Wagenpark-sectie"
+        file: "src/_data/wagenpark.yaml"
+        fields:
+          - { label: "Zichtbaar", name: "zichtbaar", widget: "boolean", default: true }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Titel", name: "titel", widget: "string" }
+          - { label: "Tekst", name: "tekst", widget: "text" }
+          - label: "Foto's"
+            name: "fotos"
+            widget: "list"
+            fields:
+              - { label: "Foto", name: "afbeelding", widget: "image" }
+              - { label: "Omschrijving foto (voor toegankelijkheid)", name: "alt", widget: "string" }
+
+  - name: "overOns"
+    label: "Over ons"
+    files:
+      - name: "overOns"
+        label: "Over-ons-sectie"
+        file: "src/_data/overOns.yaml"
+        fields:
+          - { label: "Zichtbaar", name: "zichtbaar", widget: "boolean", default: true }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Titel", name: "titel", widget: "string" }
+          - { label: "Foto", name: "afbeelding", widget: "image" }
+          - { label: "Omschrijving foto (voor toegankelijkheid)", name: "afbeelding_alt", widget: "string" }
+          - label: "Tekstalinea's"
+            name: "teksten"
+            widget: "list"
+            field: { label: "Alinea", name: "alinea", widget: "text" }
+          - label: "Puntenlijst"
+            name: "punten"
+            widget: "list"
+            field: { label: "Punt", name: "punt", widget: "string" }
+
+  - name: "contact"
+    label: "Contact"
+    files:
+      - name: "contact"
+        label: "Contact-sectie"
+        file: "src/_data/contact.yaml"
+        fields:
+          - { label: "Zichtbaar", name: "zichtbaar", widget: "boolean", default: true }
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Titel", name: "titel", widget: "string" }
+          - { label: "Tekst", name: "tekst", widget: "text" }
+          - { label: "Straat + huisnummer", name: "adres_straat", widget: "string" }
+          - { label: "Postcode + plaats", name: "adres_postcode_plaats", widget: "string" }
+          - { label: "Plaatsnaam (voor footer)", name: "plaats", widget: "string" }
+          - { label: "Telefoonnummer (zichtbaar)", name: "telefoon", widget: "string" }
+          - { label: "Telefoonnummer (voor bel-knop, zonder spaties/streepjes)", name: "telefoon_link", widget: "string" }
+          - { label: "Fax (laat leeg om te verbergen)", name: "fax", widget: "string", required: false }
+          - { label: "Zoekterm voor Google Maps", name: "maps_zoekterm", widget: "string" }

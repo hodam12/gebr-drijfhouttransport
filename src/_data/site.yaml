@@ -1,0 +1,31 @@
+bedrijfsnaam: "Gebr. Drijfhout"
+initialen: "GD"
+ondertitel: "Transport & Verhuur · Bedum"
+titel_pagina: "Gebr. Drijfhout Bedum | Transport, Aanhangwagen- & Containerverhuur"
+beschrijving: "Gebr. Drijfhout uit Bedum: meer dan 50 jaar ervaring in transport voor particulieren en bedrijven, plus verhuur van aanhangwagens en containers."
+telefoon: "050 - 301 28 21"
+telefoon_link: "0503012821"
+
+hero:
+  zichtbaar: true
+  eyebrow: "Sinds jaren ’70 · Bedum, Groningen"
+  titel: "Meer dan 50 jaar transport waarop u kunt bouwen"
+  tekst: "Gebr. Drijfhout verzorgt transport voor particulieren en bedrijven en verhuurt aanhangwagens en containers in de regio Bedum en omstreken."
+  knop_primair_tekst: "Neem contact op"
+  knop_primair_link: "#contact"
+  knop_secundair_tekst: "Bekijk onze diensten"
+  knop_secundair_link: "#diensten"
+  afbeelding: "src/assets/img-full/gallery_59.jpg"
+  afbeelding_alt: "Vrachtwagen van Gebr. Drijfhout in actie"
+
+strip:
+  zichtbaar: true
+  items:
+    - cijfer: "50+"
+      tekst: "jaar ervaring"
+    - cijfer: "Particulier & zakelijk"
+      tekst: "transport op maat"
+    - cijfer: "Eigen wagenpark"
+      tekst: "met haakarmsysteem"
+    - cijfer: "Bedum"
+      tekst: "en omstreken"

@@ -1,0 +1,12 @@
+{% if site.strip.zichtbaar %}
+  <section class="strip">
+    <div class="container strip-grid">
+      {% for item in site.strip.items %}
+        <div class="strip-item">
+          <strong>{{ item.cijfer }}</strong>
+          <span>{{ item.tekst }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

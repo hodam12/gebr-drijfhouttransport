@@ -2,7 +2,7 @@ backend:
   name: github
   repo: hodam12/gebr-drijfhouttransport
   branch: main
-  base_url: https://decap-oauth.VUL-HIER-JE-WORKER-NAAM-IN.workers.dev
+  base_url: https://decap-oauth.dhofman0307.workers.dev
   auth_endpoint: auth
 
 # Laat een redacteur eerst een wijziging opslaan als "concept" (Pull Request)

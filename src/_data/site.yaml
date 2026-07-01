@@ -2,15 +2,15 @@ bedrijfsnaam: "Gebr. Drijfhout"
 initialen: "GD"
 ondertitel: "Transport · Bedum"
 titel_pagina: "Gebr. Drijfhout Bedum | Transport van Rijplaten, Draglineschotten & Bouwmaterieel"
-beschrijving: "Gebr. Drijfhout uit Bedum: meer dan 60 jaar ervaring in transport voor particulieren en bedrijven. Gespecialiseerd in het vervoer van rijplaten, draglineschotten en ander bouwmaterieel met open opleggers, desgewenst met laadkraan."
+beschrijving: "Gebr. Drijfhout uit Bedum: meer dan 65 jaar ervaring in transport voor particulieren en bedrijven. Gespecialiseerd in het vervoer van rijplaten, draglineschotten en ander bouwmaterieel met open opleggers, desgewenst met laadkraan."
 telefoon: "050 - 301 28 21"
 telefoon_link: "0503012821"
 
 hero:
   zichtbaar: true
-  eyebrow: "Sinds jaren ’60 · Bedum, Groningen"
-  titel: "Meer dan 60 jaar transport waarop u kunt bouwen"
-  tekst: "Gebr. Drijfhout verzorgt al meer dan zestig jaar transport voor particulieren en bedrijven in en rond Bedum. Met onze eigen open opleggers, desgewenst uitgerust met een laadkraan, vervoeren wij onder meer rijplaten, draglineschotten, machines en bouwmaterialen — snel, persoonlijk en met oog voor de praktische oplossing."
+  eyebrow: "Sinds 1961 · Bedum, Groningen"
+  titel: "Meer dan 65 jaar transport waarop u kunt bouwen"
+  tekst: "Gebr. Drijfhout verzorgt al meer dan vijfenzestig jaar transport voor particulieren en bedrijven in en rond Bedum. Met onze eigen open opleggers, desgewenst uitgerust met een laadkraan, vervoeren wij onder meer rijplaten, draglineschotten, machines en bouwmaterialen — snel, persoonlijk en met oog voor de praktische oplossing."
   knop_primair_tekst: "Neem contact op"
   knop_primair_link: "#contact"
   knop_secundair_tekst: "Bekijk onze diensten"
@@ -21,7 +21,7 @@ hero:
 strip:
   zichtbaar: true
   items:
-    - cijfer: "60+"
+    - cijfer: "65+"
       tekst: "jaar ervaring"
     - cijfer: "Particulier & zakelijk"
       tekst: "transport op maat"

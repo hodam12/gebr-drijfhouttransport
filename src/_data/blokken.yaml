@@ -31,21 +31,23 @@ lijst:
     stijl: alt
     label: Werkzaamheden
     titel: Waar wij dagelijks mee werken
-    tekst: ""
+    tekst: Een greep uit het soort lading dat wij regelmatig voor particulieren en
+      bedrijven vervoeren.
     items:
-      - icoon: ""
+      - icoon: src/assets/icons/machines.svg
         titel: Machines
         tekst: Vervoer van machines voor de bouw en industrie.
-      - icoon: ""
+      - icoon: src/assets/icons/rijplaten.svg
         titel: Rijplaten
-        tekst: Transport van rijplaten voor tijdelijke bouwwegen.
-      - icoon: ""
+        tekst: Transport van rijplaten en draglineschotten voor tijdelijke
+          bouwwegen.
+      - icoon: src/assets/icons/stenen.svg
         titel: Stenen
-        tekst: Vervoer van stenen en bouwmaterialen.
-      - icoon: ""
+        tekst: Vervoer van stenen en andere bouwmaterialen.
+      - icoon: src/assets/icons/container.svg
         titel: Container tot 20ft
         tekst: Transport van containers tot 20ft.
-      - icoon: ""
+      - icoon: src/assets/icons/pallets.svg
         titel: Pallets
         tekst: Vervoer van pallets voor particulier en bedrijf.
 
@@ -108,5 +110,11 @@ lijst:
     label: Historie
     titel: Historie
     teksten:
-      - "Stappen van vroeger naar nu: van klein familiebedrijf tot een
-        vertrouwde naam in transport in en rond Bedum."
+      - Gebr. Drijfhout was naast transport ook jarenlang actief met een eigen
+        zandhandel.
+      - Vanwege onze verhuizing naar het industrieterrein van Bedum hebben wij
+        besloten te stoppen met de zandhandel. Zaterdag 12 juli 2025 was onze
+        laatste verkoopdag hiervoor. Wij danken al onze klanten voor de
+        afgelopen jaren.
+      - Sindsdien richten wij ons volledig op transport voor particulieren en
+        bedrijven.

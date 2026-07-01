@@ -21,6 +21,16 @@
               <dd>{{ contact.fax }}</dd>
             </div>
           {% endif %}
+          {% if contact.openingstijden and contact.openingstijden.length %}
+            <div>
+              <dt>Openingstijden</dt>
+              <dd>
+                {% for regel in contact.openingstijden %}
+                  {{ regel.dagen }}: {{ regel.tijden }}{% if not loop.last %}<br>{% endif %}
+                {% endfor %}
+              </dd>
+            </div>
+          {% endif %}
         </dl>
       </div>
       <div class="contact-map">

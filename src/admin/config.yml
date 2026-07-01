@@ -159,3 +159,10 @@ collections:
           - { label: "Telefoonnummer (voor bel-knop, zonder spaties/streepjes)", name: "telefoon_link", widget: "string" }
           - { label: "Fax (laat leeg om te verbergen)", name: "fax", widget: "string", required: false }
           - { label: "Zoekterm voor Google Maps", name: "maps_zoekterm", widget: "string" }
+          - label: "Openingstijden"
+            name: "openingstijden"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Dag(en)", name: "dagen", widget: "string" }
+              - { label: "Tijden", name: "tijden", widget: "string" }

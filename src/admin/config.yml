@@ -141,6 +141,25 @@ collections:
                     widget: "list"
                     field: { label: "Alinea", name: "alinea", widget: "text" }
 
+              - label: "Tijdlijn (bv. historie/mijlpalen)"
+                name: "tijdlijn"
+                fields:
+                  - { label: "Zichtbaar", name: "zichtbaar", widget: "boolean", default: true }
+                  - { label: "Tonen in menu", name: "in_menu", widget: "boolean", default: true }
+                  - { label: "Tekst in menu", name: "menutekst", widget: "string" }
+                  - { label: "Anker (uniek, kleine letters, geen spaties)", name: "anker", widget: "string", pattern: ["^[a-z0-9-]+$", "Alleen kleine letters, cijfers en streepjes"] }
+                  - { label: "Achtergrond", name: "stijl", widget: "select", options: [{ label: "Normaal", value: "normaal" }, { label: "Lichtgrijs", value: "alt" }], default: "normaal" }
+                  - { label: "Label boven titel", name: "label", widget: "string", required: false }
+                  - { label: "Titel", name: "titel", widget: "string" }
+                  - { label: "Introductietekst", name: "tekst", widget: "text", required: false }
+                  - label: "Mijlpalen"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { label: "Jaar (kort, bv. '1961')", name: "jaar", widget: "string" }
+                      - { label: "Titel", name: "titel", widget: "string" }
+                      - { label: "Tekst", name: "tekst", widget: "text" }
+
   - name: "contact"
     label: "Contact"
     files:

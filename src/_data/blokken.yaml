@@ -117,23 +117,35 @@ lijst:
       - Eigen open opleggers, desgewenst met laadkraan
       - Persoonlijk contact en snelle planning
 
-  - type: tekst
+  - type: tijdlijn
     zichtbaar: true
     in_menu: true
     menutekst: Historie
     anker: historie
     stijl: normaal
     label: Historie
-    titel: Historie
-    teksten:
-      - Gebr. Drijfhout is een familiebedrijf met meer dan 65 jaar ervaring in
-        transport. Wat in 1961 begon met het vervoeren van vlas, stro en
-        bieten, groeide via Bedum (1970) uit tot het bedrijf van vandaag.
-      - "Geleid door Helenus Drijfhout, samen met zijn broers Albert en Sjabbe
-        en enkele neven, zijn we gespecialiseerd in het vervoeren én leggen
-        van rijplaten — sinds 2012 met kraanopleggers met afstandsbediening."
-      - Naast transport waren we jarenlang actief met een eigen zandhandel.
-        Vanwege onze verhuizing naar het industrieterrein van Bedum is de
-        zandhandel gestopt; zaterdag 12 juli 2025 was onze laatste
-        verkoopdag hiervoor. Sindsdien richten wij ons volledig op transport
-        voor particulieren en bedrijven.
+    titel: Van vlas en stro tot rijplatenspecialist
+    tekst: Gebr. Drijfhout is een familiebedrijf met meer dan 65 jaar ervaring
+      in transport, geleid door Helenus Drijfhout samen met zijn broers
+      Albert en Sjabbe en enkele neven.
+    items:
+      - jaar: "1961"
+        titel: De start in Lageland
+        tekst: Het begon met het vervoeren van vlas en stro. Eind jaren
+          zestig kwam daar het vervoeren van bieten bij, om het hele jaar
+          rond werk te hebben.
+      - jaar: "1970"
+        titel: Verhuizing naar Bedum
+        tekst: Het bedrijf verhuisde naar Bedum en groeide daar uit tot het
+          bedrijf van vandaag.
+      - jaar: "2012"
+        titel: Rijplaten met afstandsbediening
+        tekst: Sinds 2012 rijden we met kraanopleggers met afstandsbediening,
+          waarmee we rijplaten niet alleen vervoeren, maar ook precies op de
+          juiste plek leggen en weer ophalen.
+      - jaar: "2025"
+        titel: Naar het industrieterrein
+        tekst: Vanwege onze verhuizing naar het industrieterrein van Bedum
+          is de zandhandel gestopt; zaterdag 12 juli 2025 was de laatste
+          verkoopdag hiervoor. Sindsdien richten wij ons volledig op
+          transport voor particulieren en bedrijven.

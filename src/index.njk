@@ -14,7 +14,7 @@ layout: layout.njk
       {% if blok.tekst %}<p class="section-lead">{{ blok.tekst }}</p>{% endif %}
       <div class="card-grid">
         {% for item in blok.items %}
-          <article class="card">
+          <article class="card reveal">
             <div class="card-icon" aria-hidden="true">
               {% if item.icoon %}<img src="{{ item.icoon | url }}" alt="">{% endif %}
             </div>
@@ -43,10 +43,10 @@ layout: layout.njk
 {% elif blok.type == "tekst-met-foto" %}
   <section id="{{ blok.anker }}" class="section about">
     <div class="container about-grid">
-      <div class="about-media">
+      <div class="about-media reveal">
         {% afbeelding blok.afbeelding, blok.afbeelding_alt %}
       </div>
-      <div class="about-text">
+      <div class="about-text reveal">
         {% if blok.label %}<p class="section-label">{{ blok.label }}</p>{% endif %}
         <h2>{{ blok.titel }}</h2>
         {% for alinea in blok.teksten %}<p>{{ alinea }}</p>{% endfor %}
@@ -65,6 +65,26 @@ layout: layout.njk
       {% if blok.label %}<p class="section-label">{{ blok.label }}</p>{% endif %}
       <h2>{{ blok.titel }}</h2>
       {% for alinea in blok.teksten %}<p>{{ alinea }}</p>{% endfor %}
+    </div>
+  </section>
+
+{% elif blok.type == "tijdlijn" %}
+  <section id="{{ blok.anker }}" class="section{% if blok.stijl == 'alt' %} section-alt{% endif %}">
+    <div class="container">
+      {% if blok.label %}<p class="section-label">{{ blok.label }}</p>{% endif %}
+      <h2>{{ blok.titel }}</h2>
+      {% if blok.tekst %}<p class="section-lead">{{ blok.tekst }}</p>{% endif %}
+      <div class="timeline">
+        {% for item in blok.items %}
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">{{ item.jaar }}</div>
+            <div class="timeline-content">
+              <h3>{{ item.titel }}</h3>
+              <p>{{ item.tekst }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </section>
 {% endif %}

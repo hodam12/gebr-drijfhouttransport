@@ -61,7 +61,7 @@ export default function (eleventyConfig) {
     });
     let webpFormats = metadata.webp;
     let volledigeFoto = webpFormats[webpFormats.length - 1].url;
-    return `<button class="gallery-item" data-full="${volledigeFoto}">${thumb}</button>`;
+    return `<button class="gallery-item reveal" data-full="${volledigeFoto}">${thumb}</button>`;
   });
 
   return {

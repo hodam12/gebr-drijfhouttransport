@@ -8,20 +8,28 @@ lijst:
     label: Diensten
     titel: Waarmee kunnen wij u helpen?
     tekst: Wij vervoeren tegenwoordig hoofdzakelijk rijplaten en draglineschotten
-      voor de bouw, voor zowel particulieren als bedrijven.
+      voor de bouw, voor zowel particulieren als bedrijven. Met onze eigen open
+      opleggers en, indien gewenst, een laadkraan aan boord zorgen wij ervoor
+      dat uw lading snel en veilig op de juiste plek komt — of het nu gaat om
+      een eenmalige rit of een terugkerende opdracht.
     items:
       - icoon: src/assets/icons/vrachtwagen.svg
         titel: Particulier en zakelijk
-        tekst: Transport voor zowel particulieren als bedrijven, afgestemd op uw
-          situatie.
+        tekst: "Of u nu als particulier eenmalig iets vervoerd wilt hebben, of
+          als bedrijf regelmatig transport nodig heeft: wij denken met u mee
+          over de meest praktische oplossing, met persoonlijk contact en
+          duidelijke afspraken."
       - icoon: src/assets/icons/vrachtwagen.svg
         titel: Open opleggers
-        tekst: Wij rijden met open opleggers, geschikt voor het vervoer van
-          rijplaten, draglineschotten en ander bouwmaterieel.
+        tekst: Wij rijden met open opleggers, uitstekend geschikt voor het
+          vervoer van rijplaten, draglineschotten en ander bouwmaterieel dat
+          niet in een gesloten wagen past.
       - icoon: src/assets/icons/vrachtwagen.svg
         titel: Laadkraan en groot transport
-        tekst: Onze voertuigen zijn desgewenst beschikbaar met laadkraan, ook
-          geschikt voor groot transport.
+        tekst: Onze voertuigen zijn desgewenst uitgerust met een laadkraan,
+          zodat laden en lossen ook zonder extra hulpmiddelen ter plaatse
+          mogelijk is. Ook voor groot of zwaar transport bent u bij ons aan
+          het juiste adres.
 
   - type: kaarten
     zichtbaar: true
@@ -32,24 +40,28 @@ lijst:
     label: Werkzaamheden
     titel: Waar wij dagelijks mee werken
     tekst: Een greep uit het soort lading dat wij regelmatig voor particulieren en
-      bedrijven vervoeren.
+      bedrijven in en rond Bedum vervoeren — van bouwmaterieel tot pallets.
     items:
       - icoon: src/assets/icons/machines.svg
         titel: Machines
-        tekst: Vervoer van machines voor de bouw en industrie.
+        tekst: Vervoer van machines voor de bouw en industrie, met de nodige
+          zorg voor een veilige belading.
       - icoon: src/assets/icons/rijplaten.svg
         titel: Rijplaten
-        tekst: Transport van rijplaten en draglineschotten voor tijdelijke
-          bouwwegen.
+        tekst: Transport van rijplaten en draglineschotten, veelgebruikt voor
+          tijdelijke bouwwegen op de bouwplaats.
       - icoon: src/assets/icons/stenen.svg
         titel: Stenen
-        tekst: Vervoer van stenen en andere bouwmaterialen.
+        tekst: Vervoer van stenen en andere bouwmaterialen, van een kleine
+          partij tot een volle lading.
       - icoon: src/assets/icons/container.svg
         titel: Container tot 20ft
-        tekst: Transport van containers tot 20ft.
+        tekst: Transport van containers tot 20 voet, snel en zonder poespas
+          geregeld.
       - icoon: src/assets/icons/pallets.svg
         titel: Pallets
-        tekst: Vervoer van pallets voor particulier en bedrijf.
+        tekst: Vervoer van pallets voor particulier en bedrijf, ook voor
+          kleinere hoeveelheden.
 
   - type: galerij
     zichtbaar: true
@@ -60,7 +72,8 @@ lijst:
     label: Wagenpark
     titel: Modern materieel, vakkundig ingezet
     tekst: Een impressie van onze voertuigen en het werk dat we dagelijks
-      verrichten in en rond Bedum.
+      verrichten in en rond Bedum. Met onze open opleggers, desgewenst met
+      laadkraan, zijn we inzetbaar voor uiteenlopende transportklussen.
     fotos:
       - afbeelding: src/assets/img-full/gallery_52.jpg
         alt: Vrachtwagen van Gebr. Drijfhout
@@ -91,11 +104,14 @@ lijst:
     teksten:
       - Gebr. Drijfhout is al meer dan vijftig jaar een vertrouwde naam in
         transport in en rond Bedum, Groningen. Wat begon als een klein
-        familiebedrijf is uitgegroeid tot een betrouwbare partner voor
-        particulieren en bedrijven.
+        familiebedrijf is in de loop der jaren uitgegroeid tot een betrouwbare
+        partner voor particulieren en bedrijven die op zoek zijn naar
+        transport in de regio.
       - "We werken met eigen materieel, denken mee over de beste oplossing en
         staan bekend om onze persoonlijke aanpak: korte lijnen, duidelijke
-        afspraken en werk dat gewoon goed gebeurt."
+        afspraken en werk dat gewoon goed gebeurt. Of het nu gaat om een
+        eenmalig transport of een terugkerende opdracht, u weet bij ons
+        precies waar u aan toe bent."
     punten:
       - Ruime ervaring met transport voor particulier en bedrijf
       - Eigen open opleggers, desgewenst met laadkraan

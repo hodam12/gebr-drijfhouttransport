@@ -15,10 +15,10 @@
             <dt>Telefoon</dt>
             <dd><a href="tel:{{ contact.telefoon_link }}">{{ contact.telefoon }}</a></dd>
           </div>
-          {% if contact.fax %}
+          {% if contact.email %}
             <div>
-              <dt>Fax</dt>
-              <dd>{{ contact.fax }}</dd>
+              <dt>E-mail</dt>
+              <dd><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></dd>
             </div>
           {% endif %}
           {% if contact.openingstijden and contact.openingstijden.length %}

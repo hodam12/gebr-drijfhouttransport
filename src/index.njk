@@ -79,6 +79,11 @@ layout: layout.njk
           <div class="timeline-item reveal">
             <div class="timeline-marker">{{ item.jaar }}</div>
             <div class="timeline-content">
+              {% if item.afbeelding %}
+                <div class="timeline-media">
+                  {% afbeelding item.afbeelding, item.afbeelding_alt %}
+                </div>
+              {% endif %}
               <h3>{{ item.titel }}</h3>
               <p>{{ item.tekst }}</p>
             </div>

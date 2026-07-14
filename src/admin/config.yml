@@ -159,6 +159,8 @@ collections:
                       - { label: "Jaar (kort, bv. '1961')", name: "jaar", widget: "string" }
                       - { label: "Titel", name: "titel", widget: "string" }
                       - { label: "Tekst", name: "tekst", widget: "text" }
+                      - { label: "Foto (optioneel)", name: "afbeelding", widget: "image", required: false }
+                      - { label: "Omschrijving foto (voor toegankelijkheid)", name: "afbeelding_alt", widget: "string", required: false }
 
   - name: "contact"
     label: "Contact"
@@ -176,7 +178,7 @@ collections:
           - { label: "Plaatsnaam (voor footer)", name: "plaats", widget: "string" }
           - { label: "Telefoonnummer (zichtbaar)", name: "telefoon", widget: "string" }
           - { label: "Telefoonnummer (voor bel-knop, zonder spaties/streepjes)", name: "telefoon_link", widget: "string" }
-          - { label: "Fax (laat leeg om te verbergen)", name: "fax", widget: "string", required: false }
+          - { label: "E-mailadres", name: "email", widget: "string", required: false }
           - { label: "Zoekterm voor Google Maps", name: "maps_zoekterm", widget: "string" }
           - label: "Openingstijden"
             name: "openingstijden"

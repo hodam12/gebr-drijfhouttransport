@@ -10,7 +10,7 @@ hero:
   zichtbaar: true
   eyebrow: "Sinds 1961 · Bedum, Groningen"
   titel: "Meer dan 65 jaar transport waarop u kunt bouwen"
-  tekst: "Gebr. Drijfhout verzorgt al meer dan vijfenzestig jaar transport voor particulieren en bedrijven in en rond Bedum. Met onze eigen open opleggers, desgewenst uitgerust met een laadkraan, vervoeren wij onder meer rijplaten, draglineschotten, machines en bouwmaterialen — snel, persoonlijk en met oog voor de praktische oplossing."
+  tekst: "Gebr. Drijfhout verzorgt al meer dan vijfenzestig jaar transport voor particulieren en bedrijven. Met ons modern wagenpark vervoeren wij veelal rijplaten, draglineschotten, machines en bouwmaterialen — snel, persoonlijk en met oog voor de praktische oplossing."
   knop_primair_tekst: "Neem contact op"
   knop_primair_link: "#contact"
   knop_secundair_tekst: "Bekijk onze diensten"
@@ -25,7 +25,7 @@ strip:
       tekst: "jaar ervaring"
     - cijfer: "Particulier & zakelijk"
       tekst: "transport op maat"
-    - cijfer: "Eigen wagenpark"
-      tekst: "met open opleggers"
+    - cijfer: "Modern wagenpark"
+      tekst: "voorzien van autolaadkraan"
     - cijfer: "Bedum"
       tekst: "en omstreken"
